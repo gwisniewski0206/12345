@@ -1,0 +1,1109 @@
+
+.logo {
+    position: absolute;
+    top: 54%;
+    left: 49%;
+    z-index: 12;
+    transform: translate(-50%, -50%);
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+    z-index: -1;
+}
+
+.logo img {
+    width: 110%;
+    height: auto;
+    display: block;
+}
+
+nav {
+    background: #fff;
+}
+
+.parallax-container {
+    height: 90vh;
+
+}
+
+
+.parallax-element {
+    position: relative;
+    margin: 150px 20px;
+    padding: 20px;
+
+}
+
+.parallax-triangle {
+    position: fixed;
+    top: 0;
+    left: -50px;
+    /* Außerhalb des Bildschirms */
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid #007bff;
+    z-index: -1;
+    transition: transform 0.1s ease-out;
+}
+
+
+.header {
+    width: 100%;
+    min-height: 87vh;
+    /* Adjusted min-height to match aspect ratio on larger screens */
+    position: relative;
+    overflow: visible;
+    background: #fff;
+    height: 70vh;
+}
+
+.header::after {
+    /*
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 300px; /* Höhe des Fade-Effekts */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+    pointer-events: none;
+    
+}
+
+.triangle-big1 {
+    display: none;
+}
+
+.triangle-big2 {
+    display: none;
+}
+
+.triangle-big3 {
+    display: none;
+}
+
+.triangle {
+    color: #1963d1;
+    position: absolute;
+    opacity: 1.0;
+    mix-blend-mode: multiply;
+    filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.26));
+    transition: transform 0.3s ease-out, opacity 0.3s ease-in-out;
+    border-bottom-color: #1963d1;
+
+    /* Set the color for all triangles */
+}
+
+.triangle1 {
+    width: 0;
+    height: 0;
+    border-left: 30vw solid transparent;
+    border-right: 20vw solid transparent;
+    border-bottom: 20vw solid;
+    /* Adjusted for larger screens */
+    transform: rotate(10deg);
+}
+
+
+
+
+.triangle2 {
+    width: 0;
+    height: 0;
+    border-left: 8vw solid transparent;
+    border-right: 32vw solid transparent;
+    border-bottom: 38vw solid;
+    /* Adjusted for larger screens */
+    left: 47%;
+    top: 16%;
+    transform: rotate(-25deg);
+}
+
+.triangle3 {
+    width: 0;
+    height: 0;
+    border-left: 50vw solid transparent;
+    border-right: 61vw solid transparent;
+    border-bottom: 80vw solid;
+    /* Adjusted for larger screens */
+    left: 14%;
+    top: 30%;
+    transform: rotate(5deg);
+}
+
+.triangle4 {
+    width: 0;
+    height: 0;
+    border-left: 0vw solid transparent;
+    border-right: 52vw solid transparent;
+    border-bottom: 30vw solid;
+    /* Adjusted for larger screens */
+    left: 10%;
+    top: 76%;
+    transform: rotate(-40deg);
+}
+
+.triangle5 {
+    width: 0;
+    height: 0;
+    border-left: 22vw solid transparent;
+    border-right: 2vw solid transparent;
+    border-bottom: 35vw solid;
+    /* Adjusted for larger screens */
+    left: 34%;
+    top: 0%;
+    transform: rotate(60deg);
+}
+
+.triangle6 {
+    width: 0;
+    height: 0;
+    border-left: 14vw solid transparent;
+    border-right: 30vw solid transparent;
+    border-bottom: 47vw solid;
+    /* Adjusted for larger screens */
+    left: 60%;
+    top: 70%;
+    transform: rotate(-50deg);
+}
+
+@media (max-width: 479px) and (orientation: portrait) {
+    /* SMALLER DEVICES */
+
+
+
+    .header {
+        width: 100%;
+        min-height: 90vh;
+        /* Adjusted min-height to match aspect ratio on larger screens */
+        position: relative;
+        overflow: visible;
+        background-color: #fff !important;
+    }
+
+    .parallax-triangle {
+        display: none;
+    }
+
+    .triangle {
+        color: #1963d1;
+        position: absolute;
+        opacity: 1.0;
+        mix-blend-mode: multiply;
+        filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.26));
+        transition: transform 0.3s ease-out;
+        border-bottom-color: #1963d1;
+        /* Set the color for all triangles */
+    }
+
+    .triangle1 {
+        width: 0;
+        height: 0;
+        border-left: 40vw solid transparent;
+        border-right: 0vw solid transparent;
+        border-bottom: 40vw solid;
+        /* Adjusted for larger screens */
+        left: 10%;
+        top: 22%;
+        transform: rotate(10deg);
+    }
+
+    .triangle2 {
+        width: 0;
+        height: 0;
+        border-left: 21vw solid transparent;
+        border-right: 15vw solid transparent;
+        border-bottom: 30vw solid;
+        /* Adjusted for larger screens */
+        left: 50%;
+        top: -2%;
+        transform: rotate(-25deg);
+    }
+
+    .triangle3 {
+        width: 0;
+        height: 0;
+        border-left: 50vw solid transparent;
+        border-right: 25vw solid transparent;
+        border-bottom: 65vw solid;
+        /* Adjusted for larger screens */
+        left: 12%;
+        top: 26%;
+        transform: rotate(5deg);
+    }
+
+    .triangle4 {
+        width: 0;
+        height: 0;
+        border-left: 25vw solid transparent;
+        border-right: 42vw solid transparent;
+        border-bottom: 38vw solid;
+        /* Adjusted for larger screens */
+        left: 26%;
+        top: 65%;
+        transform: rotate(-40deg);
+    }
+
+    .triangle5 {
+        width: 0;
+        height: 0;
+        border-left: 26vw solid transparent;
+        border-right: 13vw solid transparent;
+        border-bottom: 34vw solid;
+        /* Adjusted for larger screens */
+        left: 27%;
+        top: 2%;
+        transform: rotate(60deg);
+    }
+
+    .triangle6 {
+        width: 0;
+        height: 0;
+        border-left: 15vw solid transparent;
+        border-right: 33vw solid transparent;
+        border-bottom: 27vw solid;
+        /* Adjusted for larger screens */
+        left: 37%;
+        top: 79%;
+        transform: rotate(-50deg);
+    }
+
+}
+
+
+
+@media (max-width: 479px) and (orientation: landscape) {
+
+
+    /* Styles for small devices */
+    .header {
+        width: 100%;
+        min-height: 90vh;
+        /* Adjusted min-height to match aspect ratio on larger screens */
+        position: relative;
+        background-color: #fff;
+    }
+
+    .parallax-triangle {
+        display: none;
+    }
+
+    .triangle {
+        color: #1963d1;
+        position: absolute;
+        opacity: 1.0;
+        mix-blend-mode: multiply;
+        filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.26));
+        transition: transform 0.3s ease-out;
+        border-bottom-color: #1963d1;
+        /* Set the color for all triangles */
+    }
+
+    .triangle1 {
+        width: 0;
+        height: 0;
+        border-left: 40vw solid transparent;
+        border-right: 0vw solid transparent;
+        border-bottom: 40vw solid;
+        /* Adjusted for larger screens */
+        left: 10%;
+        top: 22%;
+        transform: rotate(10deg);
+    }
+
+    .triangle2 {
+        width: 0;
+        height: 0;
+        border-left: 33vw solid transparent;
+        border-right: 21vw solid transparent;
+        border-bottom: 45vw solid;
+        /* Adjusted for larger screens */
+        left: 50%;
+        top: -2%;
+        transform: rotate(-25deg);
+    }
+
+    .triangle3 {
+        width: 0;
+        height: 0;
+        border-left: 80vw solid transparent;
+        border-right: 31vw solid transparent;
+        border-bottom: 96vw solid;
+        /* Adjusted for larger screens */
+        left: 1%;
+        top: 18%;
+        transform: rotate(5deg);
+    }
+
+    .triangle4 {
+        width: 0;
+        height: 0;
+        border-left: 25vw solid transparent;
+        border-right: 42vw solid transparent;
+        border-bottom: 38vw solid;
+        /* Adjusted for larger screens */
+        left: 26%;
+        top: 65%;
+        transform: rotate(-40deg);
+    }
+
+    .triangle5 {
+        width: 0;
+        height: 0;
+        border-left: 26vw solid transparent;
+        border-right: 13vw solid transparent;
+        border-bottom: 34vw solid;
+        /* Adjusted for larger screens */
+        left: 27%;
+        top: 2%;
+        transform: rotate(60deg);
+    }
+
+    .triangle6 {
+        width: 0;
+        height: 0;
+        border-left: 15vw solid transparent;
+        border-right: 33vw solid transparent;
+        border-bottom: 27vw solid;
+        /* Adjusted for larger screens */
+        left: 37%;
+        top: 79%;
+        transform: rotate(-50deg);
+    }
+
+
+}
+
+
+
+/* Media query for tablets */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+
+
+    .header {
+        width: 100%;
+        min-height: 90vh;
+        /* Adjusted min-height to match aspect ratio on larger screens */
+        position: relative;
+
+        background-color: #fff;
+    }
+
+
+    .parallax-triangle {
+        display: none;
+    }
+
+
+
+
+    .triangle {
+        color: #1963d1;
+        position: absolute;
+        opacity: 1.0;
+        mix-blend-mode: multiply;
+        filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.26));
+        transition: transform 0.3s ease-out;
+        border-bottom-color: #1963d1;
+        /* Set the color for all triangles */
+    }
+
+    .triangle1 {
+        width: 0;
+        height: 0;
+        border-left: 20vw solid transparent;
+        border-right: 30vw solid transparent;
+        border-bottom: 30vw solid;
+        /* Adjusted for larger screens */
+        left: 7%;
+        top: 16%;
+        transform: rotate(10deg);
+    }
+
+    .triangle2 {
+        width: 0;
+        height: 0;
+        border-left: 24vw solid transparent;
+        border-right: 0vw solid transparent;
+        border-bottom: 35vw solid;
+        /* Adjusted for larger screens */
+        left: 61%;
+        top: 5%;
+        transform: rotate(-25deg);
+    }
+
+    .triangle3 {
+        width: 0;
+        height: 0;
+        border-left: 60vw solid transparent;
+        border-right: 41vw solid transparent;
+        border-bottom: 60vw solid;
+        /* Adjusted for larger screens */
+        left: 10%;
+        top: 22%;
+        transform: rotate(5deg);
+    }
+
+    .triangle4 {
+        width: 0;
+        height: 0;
+        border-left: 0vw solid transparent;
+        border-right: 41vw solid transparent;
+        border-bottom: 30vw solid;
+        /* Adjusted for larger screens */
+        left: 45%;
+        top: 65%;
+        transform: rotate(-40deg);
+    }
+
+    .triangle5 {
+        width: 0;
+        height: 0;
+        border-left: 25vw solid transparent;
+        border-right: 5vw solid transparent;
+        border-bottom: 12vw solid;
+        /* Adjusted for larger screens */
+        left: 54%;
+        top: 7%;
+        transform: rotate(60deg);
+    }
+
+    .triangle6 {
+        width: 0;
+        height: 0;
+        border-left: 8vw solid transparent;
+        border-right: 10vw solid transparent;
+        border-bottom: 14vw solid;
+        /* Adjusted for larger screens */
+        left: 32%;
+        top: 72%;
+        transform: rotate(-50deg);
+    }
+
+}
+
+
+
+/* Media query for small laptops and desktops */
+@media (min-width: 1024px) and (max-width: 1279px) and (orientation: portrait) {
+
+
+
+    .header {
+        min-height: 90vh;
+    }
+
+
+    .triangle-big1 {
+        border-right: 61vh solid transparent;
+        border-left: 27vh solid transparent;
+        border-bottom: 50vh solid;
+        left: -29vw;
+        top: 40vh;
+        display: flex !important;
+
+    }
+
+    .triangle-big2 {
+        transform: translateY(0px) rotate(141deg);
+        border-right: 61vh solid transparent;
+        border-left: 27vh solid transparent;
+        border-bottom: 50vh solid;
+        left: 80vw;
+        top: 60vh;
+        display: flex;
+    }
+
+    .triangle-big3 {
+        transform: translateY(0px) rotate(-6deg);
+        border-left: 27vh solid transparent;
+        border-right: 271vh solid transparent;
+        border-bottom: 50vh solid;
+        left: -18%;
+        top: -50%;
+        display: flex;
+    }
+
+    .triangle1 {
+        border-left: 20vw solid transparent;
+        border-left: 18vw solid transparent;
+        border-bottom: 20vw solid;
+        left: 4%;
+        top: 42%;
+    }
+
+    .triangle2 {
+        border-left: 15vw solid transparent;
+        border-right: 12vw solid transparent;
+        border-bottom: 18vw solid;
+        left: 65%;
+        top: 17%;
+    }
+
+    .triangle3 {
+        border-left: 46vw solid transparent;
+        border-right: 33vw solid transparent;
+        border-bottom: 47vw solid;
+        left: 15%;
+        top: 21%;
+    }
+
+    .triangle4 {
+        border-left: 10vw solid transparent;
+        border-right: 13vw solid transparent;
+        border-bottom: 20vw solid;
+        left: 65%;
+        top: 61%;
+    }
+
+    .triangle5 {
+        border-left: 14vw solid transparent;
+        border-right: 13vw solid transparent;
+        border-bottom: 15vw solid;
+        left: 33%;
+        top: 8%;
+    }
+
+    .triangle6 {
+        border-left: 8vw solid transparent;
+        border-right: 15vw solid transparent;
+        border-bottom: 22vw solid;
+        left: 36%;
+        top: 68%;
+    }
+
+    .logo {
+        position: absolute;
+        top: 53%;
+        left: 56%;
+        z-index: 12;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+        z-index: -1;
+    }
+
+    .logo img {
+        width: 62%;
+        height: auto;
+        display: block;
+    }
+
+}
+
+
+
+@media (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape) {
+    /* Styles for small laptops and desktops */
+
+    .triangle-big1 {
+        border-right: 61vh solid transparent;
+        border-left: 27vh solid transparent;
+        border-bottom: 50vh solid;
+        left: -29vw;
+        top: 40vh;
+        display: flex !important;
+
+    }
+
+    .triangle-big2 {
+        transform: translateY(0px) rotate(141deg);
+        border-right: 61vh solid transparent;
+        border-left: 27vh solid transparent;
+        border-bottom: 50vh solid;
+        left: 80vw;
+        top: 60vh;
+        display: flex;
+    }
+
+    .triangle-big3 {
+        transform: translateY(0px) rotate(-6deg);
+        border-left: 27vh solid transparent;
+        border-right: 271vh solid transparent;
+        border-bottom: 50vh solid;
+        left: -18%;
+        top: -50%;
+        display: flex;
+    }
+
+    .header {
+        min-height: 90vh;
+        margin-top: -2vh;
+    }
+
+    .triangle1 {
+        border-left: 7vw solid transparent;
+        border-right: 7vw solid transparent;
+        border-bottom: 17vw solid;
+        left: 9%;
+        top: 21%;
+    }
+
+    .triangle2 {
+        border-left: 18vw solid transparent;
+        border-right: 8vw solid transparent;
+        border-bottom: 18vw solid;
+        left: 61%;
+        top: 12%;
+    }
+
+    .triangle3 {
+        border-left: 42vw solid transparent;
+        border-right: 18vw solid transparent;
+        border-bottom: 40vw solid;
+        left: 20%;
+        top: 2%;
+    }
+
+    .triangle4 {
+        border-left: 10vw solid transparent;
+        border-right: 13vw solid transparent;
+        border-bottom: 20vw solid;
+        left: 63%;
+        top: 39%;
+    }
+
+    .triangle5 {
+        border-left: 14vw solid transparent;
+        border-right: 13vw solid transparent;
+        border-bottom: 15vw solid;
+        left: 25%;
+        top: 2%;
+    }
+
+    .triangle6 {
+        border-left: 8vw solid transparent;
+        border-right: 15vw solid transparent;
+        border-bottom: 17vw solid;
+        left: 41%;
+        top: 63%;
+    }
+
+    .logo {
+        top: 46%;
+        left: 54%;
+    }
+
+    .logo img {
+        width: 70%;
+    }
+
+}
+
+
+@media (min-width: 1279px) and (max-height: 799px) {
+
+
+    .header {
+        min-height: 79vh;
+        margin-top: -1vh;
+    }
+
+    .triangle-big1 {
+        border-right: 61vh solid transparent;
+        border-left: 27vh solid transparent;
+        border-bottom: 50vh solid;
+        left: -29vw;
+        top: 40vh;
+        display: flex !important;
+
+    }
+
+    .triangle-big2 {
+        transform: translateY(0px) rotate(141deg);
+        border-right: 61vh solid transparent;
+        border-left: 27vh solid transparent;
+        border-bottom: 50vh solid;
+        left: 80vw;
+        top: 60vh;
+        display: flex;
+    }
+
+    .triangle-big3 {
+        transform: translateY(0px) rotate(-6deg);
+        border-left: 27vh solid transparent;
+        border-right: 271vh solid transparent;
+        border-bottom: 50vh solid;
+        left: -18%;
+        top: -50%;
+        display: flex;
+    }
+
+
+    .triangle1 {
+        border-right: 4vh solid transparent;
+        border-left: 9vh solid transparent;
+        border-bottom: 9vh solid;
+        left: 22vw;
+        top: 37vh;
+    }
+
+
+    .triangle2 {
+        border-left: 7vw solid transparent;
+        border-right: 6vw solid transparent;
+        border-bottom: 10vw solid;
+        left: 71%;
+        top: 27%;
+    }
+
+    .triangle3 {
+        border-left: 60vh solid transparent;
+        border-right: 18vh solid transparent;
+        border-bottom: 46vh solid;
+        left: 27vw;
+        top: 14vh;
+    }
+
+    .triangle4 {
+        border-left: 3vw solid transparent;
+        border-right: 3vw solid transparent;
+        border-bottom: 5vw solid;
+        left: 78%;
+        top: 42%;
+    }
+
+    .triangle5 {
+        border-left: 9vw solid transparent;
+        border-right: 5vw solid transparent;
+        border-bottom: 9vw solid;
+        left: 33%;
+        top: 24%;
+    }
+
+    .triangle6 {
+        border-left: 9vw solid transparent;
+        border-right: 9vw solid transparent;
+        border-bottom: 14vw solid;
+        left: 37%;
+        top: 61%;
+    }
+
+    .logo {
+        top: 51%;
+        left: 64%;
+    }
+
+    .logo img {
+        width: 45%;
+    }
+
+}
+
+
+@media (min-width: 1280px) and (min-height: 800px) {
+
+    /* Styles for small laptops and desktops */
+    .header {
+        min-height: 90vh;
+        margin-top: -1vh;
+    }
+
+    .triangle-big1 {
+        transform: translateY(0px) rotate(0deg);
+        border-right: 61vh solid transparent;
+        border-left: 27vh solid transparent;
+        border-bottom: 50vh solid;
+        left: -29vw;
+        top: 40vh;
+        display: flex !important;
+    }
+
+    .triangle-big2 {
+        transform: translateY(0px) rotate(141deg);
+        border-right: 61vh solid transparent;
+        border-left: 27vh solid transparent;
+        border-bottom: 50vh solid;
+        left: 80vw;
+        top: 60vh;
+        display: flex;
+    }
+
+    .triangle-big3 {
+        transform: translateY(0px) rotate(-6deg);
+        border-left: 27vh solid transparent;
+        border-right: 271vh solid transparent;
+        border-bottom: 50vh solid;
+        left: -18%;
+        top: -50%;
+        display: flex;
+    }
+
+
+    .triangle1 {
+        border-right: 4vh solid transparent;
+        border-left: 9vh solid transparent;
+        border-bottom: 9vh solid;
+        left: 22vw;
+        top: 37vh;
+    }
+
+
+    .triangle2 {
+        border-left: 7vw solid transparent;
+        border-right: 6vw solid transparent;
+        border-bottom: 10vw solid;
+        left: 71%;
+        top: 27%;
+    }
+
+    .triangle3 {
+        border-left: 60vh solid transparent;
+        border-right: 18vh solid transparent;
+        border-bottom: 46vh solid;
+        left: 27vw;
+        top: 14vh;
+    }
+
+    .triangle4 {
+        border-left: 3vw solid transparent;
+        border-right: 3vw solid transparent;
+        border-bottom: 5vw solid;
+        left: 78%;
+        top: 42%;
+    }
+
+    .triangle5 {
+        border-left: 9vw solid transparent;
+        border-right: 5vw solid transparent;
+        border-bottom: 9vw solid;
+        left: 33%;
+        top: 24%;
+    }
+
+    .triangle6 {
+        border-left: 9vw solid transparent;
+        border-right: 9vw solid transparent;
+        border-bottom: 14vw solid;
+        left: 37%;
+        top: 61%;
+    }
+
+    .logo {
+        top: 51%;
+        left: 64%;
+    }
+
+    .logo img {
+        width: 45%;
+    }
+
+}
+
+
+@media (min-width: 2560px) and (orientation: landscape) {
+    .parallax-triangle {
+        top: -30px;
+        left: 160px;
+    }
+
+    .header {
+        min-height: 95vh;
+    }
+
+    nav {
+        height: 15vh;
+    }
+
+    .triangle-big1 {
+        border-right: 61vw solid transparent;
+        border-left: 27vw solid transparent;
+        border-bottom: 50vw solid;
+        left: -58%;
+        top: 12%;
+        display: flex !important;
+    }
+
+    .triangle-big2 {
+        transform: translateY(0px) rotate(141deg);
+        border-right: 61vw solid transparent;
+        border-left: 27vw solid transparent;
+        border-bottom: 50vw solid;
+        left: 80%;
+        top: 38%;
+        display: flex;
+    }
+
+    .triangle-big3 {
+        transform: translateY(0px) rotate(-6deg);
+        border-left: 27vw solid transparent;
+        border-right: 133vw solid transparent;
+        border-bottom: 30vw solid;
+        left: -18%;
+        top: -37%;
+        display: flex;
+    }
+
+
+    .triangle1 {
+        border-right: 1vw solid transparent;
+        border-left: 7vw solid transparent;
+        border-bottom: 10vw solid;
+        left: 24%;
+        top: 43%;
+    }
+
+
+    .triangle2 {
+        border-left: 7vw solid transparent;
+        border-right: 6vw solid transparent;
+        border-bottom: 10vw solid;
+        left: 71%;
+        top: 27%;
+    }
+
+    .triangle3 {
+        border-left: 42vw solid transparent;
+        border-right: 8vw solid transparent;
+        border-bottom: 35vw solid;
+        left: 28%;
+        top: 6%;
+    }
+
+    .triangle4 {
+        border-left: 3vw solid transparent;
+        border-right: 3vw solid transparent;
+        border-bottom: 5vw solid;
+        left: 78%;
+        top: 42%;
+    }
+
+    .triangle5 {
+        border-left: 9vw solid transparent;
+        border-right: 5vw solid transparent;
+        border-bottom: 9vw solid;
+        left: 33%;
+        top: 24%;
+    }
+
+    .triangle6 {
+        border-left: 9vw solid transparent;
+        border-right: 9vw solid transparent;
+        border-bottom: 14vw solid;
+        left: 37%;
+        top: 61%;
+    }
+
+    .logo {
+        top: 52%;
+        left: 62%;
+    }
+
+    .logo img {
+        width: 44%;
+    }
+
+
+}
+
+@media (min-width: 3440px) and (orientation: landscape) {
+    .header {
+        min-height: 93vh;
+        margin-top: -10vh;
+    }
+
+    .triangle-big1 {
+        border-right: 61vw solid transparent;
+        border-left: 27vw solid transparent;
+        border-bottom: 50vw solid;
+        left: -71%;
+        top: -54%;
+        display: flex !important;
+    }
+
+    .triangle-big2 {
+        transform: translateY(0px) rotate(141deg);
+        border-right: 61vw solid transparent;
+        border-left: 27vw solid transparent;
+        border-bottom: 50vw solid;
+        left: 62%;
+        top: 3%;
+        display: flex;
+    }
+
+    .triangle-big3 {
+        transform: translateY(0px) rotate(-6deg);
+        border-left: 27vw solid transparent;
+        border-right: 133vw solid transparent;
+        border-bottom: 30vw solid;
+        left: -18%;
+        top: -76%;
+        display: flex;
+    }
+
+
+    .triangle1 {
+        border-right: 2vw solid transparent;
+        border-left: 5vw solid transparent;
+        border-bottom: 6vw solid;
+        left: 29%;
+        top: 49%;
+    }
+
+
+    .triangle2 {
+        border-left: 4vw solid transparent;
+        border-right: 3vw solid transparent;
+        border-bottom: 6vw solid;
+        left: 57%;
+        top: 36%;
+    }
+
+    .triangle3 {
+        border-left: 25vw solid transparent;
+        border-right: 0vw solid transparent;
+        border-bottom: 21vw solid;
+        left: 33%;
+        top: 10%;
+    }
+
+    .triangle4 {
+        border-left: 2vw solid transparent;
+        border-right: 2vw solid transparent;
+        border-bottom: 4vw solid;
+        left: 60%;
+        top: 51%;
+    }
+
+    .triangle5 {
+        border-left: 3vw solid transparent;
+        border-right: 3vw solid transparent;
+        border-bottom: 5vw solid;
+        left: 38%;
+        top: 31%;
+    }
+
+    .triangle6 {
+        border-left: 4vw solid transparent;
+        border-right: 0vw solid transparent;
+        border-bottom: 4vw solid;
+        left: 45%;
+        top: 74%;
+    }
+
+    .logo {
+        top: 58%;
+        left: 62%;
+    }
+
+    .logo img {
+        width: 31%;
+    }
+}

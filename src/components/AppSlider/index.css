@@ -1,0 +1,134 @@
+/* Container styling */
+.slider-container {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+  background: #1963d1;
+  padding: 2rem 0; /* adjust vertical padding as needed */
+ /* box-shadow: 0 10px 20px 10px rgba(0,0,0,0.3); /* Add subtle shadow */
+  margin-bottom: 5rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Inner slider container to hold slides horizontally */
+.slider-inner {
+  display: flex;
+  transition: transform 1.5s ease-in-out;
+  margin-left:10%;
+}
+
+/* Each slide occupies 100% width */
+.slide {
+  display: flex;
+  align-items: center;    /* Center columns vertically */
+  justify-content: center;
+  min-width: 100%;
+}
+
+/* Left column: text content, centered vertically */
+.slide-left {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+}
+
+
+.slide-left > * {
+  color: white !important;
+  margin-left: 10%;
+}
+.slider-dots {
+  display: none;
+}
+
+/* Right column: image content, centered vertically */
+.slide-right {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  align-items: left;
+}
+
+.slide-right img {    
+  max-width: 30%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.slide-left > h2 {
+  background: transparent !important;
+  font-size: 36px !important;
+  text-shadow: 0 0 50px #1963d187, 0 0 50px #1963d17b, 0 0 50px #1963d186;
+}
+
+
+/* Button styling */
+.slide-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #1963d1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; 
+  border: 1px solid white;
+}
+
+.slide-button:hover {
+  background-color: #0f4ba8;
+}
+
+/* Arrow icons styling */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: rgba(25, 99, 209, 0.5);
+  padding: 0.5rem;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.slider-arrow:hover {
+  background: rgba(25, 99, 209, 0.8);
+}
+
+.left-arrow {
+  left: 1rem;
+}
+
+.right-arrow {
+  right: 1rem;
+}
+
+/* Slider dots navigation */
+.slider-dots {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.slider-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.slider-dots .dot.active {
+  background: #1963d1;
+}

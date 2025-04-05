@@ -1,0 +1,347 @@
+/* Desktop Navbar base styles */
+.dbJnyt{
+  display: flex;
+}
+
+.sub.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1963d1;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  height: fit-content;
+}
+
+.sub.navbar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1963d1;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  height: fit-content;;
+}
+
+.home.navbar {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  transition: all 0.3s ease-in-out;
+  border-top: 2px solid #1963d1;
+  border-bottom: 2px solid #1963d1;
+}
+
+.home.navbar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1963d1;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  height: fit-content;
+}
+
+/* Nav content adjustments */
+.nav-content {
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.home.navbar > .nav-content {
+  margin-left: 0;
+}
+
+.home.navbar.sticky > .nav-content {
+  margin-left: 25%;
+}
+
+.sub.navbar > .nav-content {
+  margin-left: 25%;
+}
+
+.sub.navbar.sticky > .nav-content {
+  margin-left: 25%;
+}
+
+.home .dqWrXx {
+  padding-right: 25%;
+  transition: padding-right 0.4s ease-in-out !important;
+}
+
+.home.navbar.sticky .dqWrXx {
+  padding-right: 12%;
+} 
+
+.home.navbar.sticky .dqWrXx span {
+  color: white !important;
+}
+
+.sub .dqWrXx {
+  padding-right: 12%;
+  transition: padding-right 0.4s ease-in-out !important;
+}
+
+.sub.navbar.sticky .dqWrXx {
+  padding-right: 12%;
+}
+
+.home .navbar.sticky > .nav-content > .nav-links > * {
+  color: white;
+}
+
+.sub .navbar.sticky > .nav-content > .nav-links > * {
+  color: white;
+}
+
+.navbar > .nav-content > .nav-links > * {
+  color: white;
+}
+
+.sub.navbar span {
+  color: white !important;
+}
+
+/* Logo styling */
+.home .nav-logo {
+  position: absolute;
+  left: 5%;
+  top: 0%;
+  width: 20vh;
+  margin: 1%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.home .nav-logo.visible {
+  position: relative;
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.home .nav-logo.hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.sub .nav-logo {
+  position: relative;
+  left: 5%;
+  top: 0%;
+  width: 20vh;
+  margin: 1%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.submenu-item {
+  position:absolute;
+  top: 20;
+  left: 50px;
+  background: #1963d1;
+  padding: 10px;
+  font-size: larger;
+}
+
+.sub .nav-logo.visible {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.sub .nav-logo.hidden {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+/* Main navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  top: 4vh;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Dropdown submenu styles */
+.nav-links li.dropdown {
+  position: relative;
+}
+
+.nav-links li.dropdown > span {
+  font-weight: bold;
+  cursor: pointer;
+  display: block; 
+  color: unset;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 150px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Show the submenu when dropdown is active */
+.nav-links li.dropdown.open > .dropdown-menu {
+  display: block;
+}
+
+/* Sticky navbar adjustments for submenu */
+.navbar.sticky .dropdown-menu {
+  background-color: #1963d1;
+}
+
+.navbar.sticky .dropdown-menu li a {
+  color: white;
+}
+
+.sub .navbar .dropdown-menu li a {
+  color: white;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+ .home.navbar {
+      position: relative;
+      width: 100%;
+      height: 10vh;
+      transition: all 0.3s ease-in-out;
+      border-top: 2px solid #1963d1;
+      border-bottom: 2px solid #1963d1;
+      vertical-align: middle !important;
+      display: flex
+  ;
+      flex-direction: row-reverse;
+  }
+
+  .navbar.sticky {
+    display:unset;
+  }
+
+  /* Adjust the burger menu styling */
+  .burger-menu {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 1rem;
+    z-index: 1100; /* Ensures it sits above the nav-links overlay */
+  }
+  
+  .burger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff; /* Contrast against the navbar background */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Rework the nav-content to better align items on mobile */
+  .nav-content {
+    margin: 0;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Mobile nav-links as a slide-in overlay */
+  .nav-links {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70%;
+    max-width: 300px;
+    background-color: #1963d1; /* Matching the navbar background */
+    padding: 2rem 1rem;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1090;
+  }
+  
+  /* When the mobile menu is open */
+  .nav-links.mobile-open {
+    transform: translateX(0);
+    display: flex;
+  }
+  
+  /* Style individual nav link items for easier tapping */
+  .nav-links li {
+    margin: 1rem 0;
+  }
+  
+  .nav-links li a {
+    font-size: 1.2rem;
+    color: white;
+  }
+  
+  /* Mobile adjustments for dropdown menus */
+  .nav-links li.dropdown > .dropdown-menu {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 0.5rem;
+    border: none;
+    box-shadow: none;
+  }
+  
+  .nav-links li.dropdown.open > .dropdown-menu {
+    display: flex;
+  }
+  
+  .dropdown-menu li {
+    padding: 0.5rem 0;
+  }
+  
+  /* Adjust the logo for mobile: center it and size it down */
+  .nav-logo {
+    position: static;
+    transform: none;
+    width: 150px;
+    margin: 0 auto;
+    opacity: 1;
+  }
+}

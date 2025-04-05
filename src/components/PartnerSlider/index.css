@@ -1,0 +1,74 @@
+/* SlidingImagesSection.css */
+
+/* General section styling */
+.sliding-images-section {
+    padding: 4rem 0rem; /* Add padding for top and bottom */
+    text-align: center; /* Center all content */
+    background: #1963d1;    
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+  box-shadow: 0 10px 20px 10px rgba(0,0,0,0.3); /* Add subtle shadow */
+    
+  }
+  
+  .section-title {
+    font-size: 2.5rem; /* Large title */
+    font-weight: bold;
+    margin-bottom: 2rem; /* Space between title and images */
+    color: white;
+  }
+  
+  /* Image container - Flexbox layout */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; /* Space between images */
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
+    background: #1963d1;
+   
+  }
+  
+  /* Image styles */
+  .image-partner {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  /* Left image alignment */
+  .image-left {
+    transform: translateX(-100px);
+    transition: transform 1s ease-out;
+    margin-right: -5%;
+  }
+  
+  /* Right image alignment */
+  .image-right {
+    transform: translateX(100px);
+    transition: transform 1s ease-out;
+    margin-left: -5%;
+  }
+  
+  /* Image visible on scroll */
+  .image-left.visible {
+    transform: translateX(0);
+  }
+  
+  .image-right.visible {
+    transform: translateX(0);
+  }
+  

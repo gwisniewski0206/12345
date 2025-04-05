@@ -1,0 +1,71 @@
+[
+    {
+      "id": 1,
+      "profile_photo": "/images/member1.jpg",
+      "first_name": "John",
+      "last_name": "Doe",
+      "position": "Developer",
+      "shortinfo": "Expert in frontend development.",
+      "personal_touch": "John loves hiking and outdoor adventures.",
+      "location": "New York, USA",
+      "switch_photo1": "/images/member1_hover1.jpg",
+      "switch_photo2": "/images/member1_hover2.jpg",
+      "switch_photo3": "/images/member1_hover3.jpg",
+      "priority": 1
+    },
+    {
+      "id": 2,
+      "profile_photo": "/images/member2.jpg",
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "position": "Designer",
+      "shortinfo": "Passionate about UI/UX design.",
+      "personal_touch": "jo",
+      "location": "London, UK",
+      "switch_photo1": "/images/member1_hover1.jpg",
+      "switch_photo2": "/images/member1_hover2.jpg",
+      "switch_photo3": "",
+      "priority": 1
+    },    {
+        "id": 3,
+        "profile_photo": "/images/member2.jpg",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "position": "Designer",
+        "shortinfo": "Passionate about UI/UX design.",
+        "personal_touch": "teest",
+        "location": "London, UK",
+        "switch_photo1": "/images/member1_hover1.jpg",
+        "switch_photo2": "/images/member1_hover2.jpg",
+        "switch_photo3": "",
+        "priority": 1
+      },    {
+        "id": 4,
+        "profile_photo": "/images/member2.jpg",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "position": "Designer",
+        "shortinfo": "Passionate about UI/UX design.",
+        "personal_touch": "test",
+        "location": "London, UK",
+        "switch_photo1": "/images/member2_hover1.jpg",
+        "switch_photo2": "/images/member2_hover2.jpg",
+        "switch_photo3": "",
+        "priority": 1
+      },
+      {
+        "id": 4,
+        "profile_photo": "/images/member2.jpg",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "position": "Designer",
+        "shortinfo": "Passionate about UI/UX design.",
+        "personal_touch": "test",
+        "location": "London, UK",
+        "switch_photo1": "/images/member2_hover1.jpg",
+        "switch_photo2": "/images/member2_hover2.jpg",
+        "switch_photo3": "",
+        "priority": 1
+      }
+  ]
+  
